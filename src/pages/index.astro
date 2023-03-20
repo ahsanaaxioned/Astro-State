@@ -6,6 +6,8 @@ interface props  {
 const {title} = Astro.props
 import AstroState from "../components/AstroState";
 // import CartFlyout from "../components/CartFlyout";
+import FilterColor from "../components/FilterColor"
+
 ---
 
 <!DOCTYPE html>
@@ -20,7 +22,7 @@ import AstroState from "../components/AstroState";
 	<body>
 		<main>
 			<AstroState   client:load />
-			<!-- <CartFlyout  client:load/> -->
+			<FilterColor  client:load/>
 		</main>
 	</body>
 </html>
